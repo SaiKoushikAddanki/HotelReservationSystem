@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.koushik.hotel.entity.Hotel;
 import com.koushik.hotel.model.HotelDto;
+import com.koushik.hotel.response.ApiResponse;
 import com.koushik.hotel.service.IHotelService;
 
 import javassist.NotFoundException;
@@ -25,25 +26,47 @@ public class HotelController implements IHotelController {
 	IHotelService hotelService;
 
 	@Override
-	public ResponseEntity<Hotel> addHotelRecord(@RequestBody HotelDto hotel) {
-		logger.info("Start::addHotelRecord method");
-		return ResponseEntity.status(HttpStatus.CREATED).body(hotelService.insertHotelRecord(hotel));
+	public ApiResponse<Hotel> addHotelRecord(@RequestBody HotelDto hotel) {
+		logger.info("START::addHotelRecord method");
+		ApiResponse<Hotel> response = new ApiResponse<>();
+		response.setStatus(HttpStatus.CREATED);
+		response.setMessage("Successfully inserted the record");
+		response.setData(hotelService.insertHotelRecord(hotel));
+		logger.info("END::addHotelRecord method");
+		return response;
 	}
 
 	@Override
-	public ResponseEntity<Optional<Hotel>> getHotelDetails(@PathVariable int id) {
-		logger.info("Start::addHotelRecord method");
-		return ResponseEntity.ok(hotelService.getHotelDetailsById(id));
+	public ApiResponse<Optional<Hotel>> getHotelDetails(@PathVariable int id) {
+		logger.info("START::get Hotel Details method");
+		ApiResponse<Optional<Hotel>> response = new ApiResponse<>();
+		response.setStatus(HttpStatus.OK);
+		response.setMessage("Successfully retrieved the record");
+		response.setData(hotelService.getHotelDetailsById(id));
+		logger.info("END::get Hotel Details method");
+		return response;
 	}
 
 	@Override
-	public ResponseEntity<Hotel> modifyHotelRecord(@PathVariable int id, @RequestBody HotelDto hotel)
+	public ApiResponse<Hotel> modifyHotelRecord(@PathVariable int id, @RequestBody HotelDto hotel)
 			throws NotFoundException {
-		return ResponseEntity.status(HttpStatus.ACCEPTED).body(hotelService.modifyHotelRecord(id, hotel));
+		logger.info("START::Modify Hotel Records method");
+		ApiResponse<Hotel> response = new ApiResponse<>();
+		response.setStatus(HttpStatus.ACCEPTED);
+		response.setMessage("Successfully updated the record");
+		response.setData(hotelService.modifyHotelRecord(id, hotel));
+		logger.info("END::Modify Hotel Records method");
+		return response;
 	}
 
 	@Override
-	public ResponseEntity<String> deleteHotelRecord(@PathVariable int id) {
-		return ResponseEntity.status(HttpStatus.ACCEPTED).body(hotelService.deleteHotelRecordById(id));
+	public ApiResponse<String> deleteHotelRecord(@PathVariable int id) {
+		logger.info("START::Delete Hotel Record method");
+		ApiResponse<String> response = new ApiResponse<>();
+		response.setStatus(HttpStatus.ACCEPTED);
+		response.setMessage("Successfully deleted the record");
+		response.setData(hotelService.deleteHotelRecordById(id));
+		logger.info("END::Delete Hotel Records method");
+		return response;
 	}
 }

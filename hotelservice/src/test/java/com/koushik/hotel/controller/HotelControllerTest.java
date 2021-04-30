@@ -31,7 +31,7 @@ class HotelControllerTest {
 
 	@MockBean
 	HotelService hotelService;
-	
+
 	private HotelDto hotelDto;
 
 	@BeforeEach
@@ -42,7 +42,6 @@ class HotelControllerTest {
 		hotelDto = new HotelDto("Sri Satya Sai", "Pune", "A", 9963382556L, list);
 	}
 
-
 	@Test
 	void testGetHotelDetails() throws Exception {
 		mockMvc.perform(MockMvcRequestBuilders.get("/hotel/1")).andExpect(status().isOk());
@@ -50,23 +49,22 @@ class HotelControllerTest {
 
 	@Test
 	void testAddHotelDetails() throws Exception {
-		
+
 		String jsonRequest = new ObjectMapper().writeValueAsString(hotelDto);
-		mockMvc.perform(
-				MockMvcRequestBuilders.post("/hotel").content(jsonRequest).contentType(MediaType.APPLICATION_JSON_VALUE))
-				.andExpect(status().isCreated());
+		mockMvc.perform(MockMvcRequestBuilders.post("/hotel").content(jsonRequest)
+				.contentType(MediaType.APPLICATION_JSON_VALUE)).andExpect(status().isOk());
 	}
 
 	@Test
 	void testModifyHotelRecord() throws Exception {
-		
+
 		String jsonRequest = new ObjectMapper().writeValueAsString(hotelDto);
 		mockMvc.perform(MockMvcRequestBuilders.put("/hotel/31").content(jsonRequest)
-				.contentType(MediaType.APPLICATION_JSON_VALUE)).andExpect(status().isAccepted());
+				.contentType(MediaType.APPLICATION_JSON_VALUE)).andExpect(status().isOk());
 	}
 
 	@Test
 	void testDeleteHotelRecord() throws Exception {
-		mockMvc.perform(MockMvcRequestBuilders.delete("/hotel/9")).andExpect(status().isAccepted());
+		mockMvc.perform(MockMvcRequestBuilders.delete("/hotel/9")).andExpect(status().isOk());
 	}
 }
