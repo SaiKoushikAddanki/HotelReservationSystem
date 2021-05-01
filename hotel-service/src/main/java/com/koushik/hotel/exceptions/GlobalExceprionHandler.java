@@ -12,7 +12,7 @@ import javassist.NotFoundException;
 public class GlobalExceprionHandler {
 
 	
-	@ExceptionHandler(NotFoundException.class)
+	@ExceptionHandler(RecordNotFoundException.class)
 	public ApiResponse<Object> handleAllException(NotFoundException ex) {
 		ApiResponse<Object> response = new ApiResponse<>();
 		response.setStatus(HttpStatus.INTERNAL_SERVER_ERROR);

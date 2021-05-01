@@ -6,12 +6,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.koushik.hotel.entity.Hotel;
+import com.koushik.hotel.exceptions.RecordNotFoundException;
 import com.koushik.hotel.model.HotelDto;
 import com.koushik.hotel.response.ApiResponse;
 import com.koushik.hotel.service.IHotelService;
@@ -49,7 +49,7 @@ public class HotelController implements IHotelController {
 
 	@Override
 	public ApiResponse<Hotel> modifyHotelRecord(@PathVariable int id, @RequestBody HotelDto hotel)
-			throws NotFoundException {
+			throws RecordNotFoundException {
 		logger.info("START::Modify Hotel Records method");
 		ApiResponse<Hotel> response = new ApiResponse<>();
 		response.setStatus(HttpStatus.ACCEPTED);
@@ -60,7 +60,7 @@ public class HotelController implements IHotelController {
 	}
 
 	@Override
-	public ApiResponse<String> deleteHotelRecord(@PathVariable int id) {
+	public ApiResponse<String> deleteHotelRecord(@PathVariable int id) throws RecordNotFoundException {
 		logger.info("START::Delete Hotel Record method");
 		ApiResponse<String> response = new ApiResponse<>();
 		response.setStatus(HttpStatus.ACCEPTED);

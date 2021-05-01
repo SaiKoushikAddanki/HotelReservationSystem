@@ -1,5 +1,6 @@
 package com.koushik.reservation.controller;
 
+import org.springframework.data.crossstore.ChangeSetPersister.NotFoundException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,7 +19,7 @@ public interface IReservationController {
 
 	@PostMapping("/reserve")
 	public ApiResponse<ReservationDetails> bookHotelWithDetails(
-			@RequestBody ReservationDetailsDto reservationDetailsDto);
+			@RequestBody ReservationDetailsDto reservationDetailsDto) throws NotFoundException;
 
 	@GetMapping("reserve/{id}")
 	public ApiResponse<ReservationDetails> getBookingDetails(@PathVariable int id);

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.koushik.hotel.entity.Hotel;
+import com.koushik.hotel.exceptions.RecordNotFoundException;
 import com.koushik.hotel.model.HotelDto;
 import com.koushik.hotel.repository.HotelRepository;
 import com.koushik.hotel.utility.HotelUtility;
@@ -37,19 +38,19 @@ public class HotelService implements IHotelService {
 	}
 
 	@Override
-	public Hotel modifyHotelRecord(int id, HotelDto hotelDto) throws NotFoundException {
+	public Hotel modifyHotelRecord(int id, HotelDto hotelDto) throws RecordNotFoundException {
 		logger.info("START::modify Hotel Record method");
 		if (hotelRepository.findById(id).isPresent()) {
 			logger.info("Inside IF condition as the recoed is present with ID:{}", id);
 			return hotelRepository.save(new HotelUtility().convert(hotelDto));
 		} else {
 			logger.trace("In ELSE block as the record is not present with ID:{}", id);
-			throw new NotFoundException("Reocrd not found with ID:" + id);
+			throw new RecordNotFoundException("Reocrd not found with ID:" + id);
 		}
 	}
 
 	@Override
-	public String deleteHotelRecordById(int id) {
+	public String deleteHotelRecordById(int id) throws RecordNotFoundException {
 		logger.info("START::Delete Hotel Record method");
 		if (hotelRepository.findById(id).isPresent()) {
 			logger.info("Inside IF condition as the recoed is present with ID:{}", id);
@@ -57,7 +58,7 @@ public class HotelService implements IHotelService {
 			return "Delete successful for ID:" + id;
 		} else {
 			logger.trace("In ELSE block as the record is not present with ID:{}", id);
-			return "Record not found with ID:" + id;
+			throw new RecordNotFoundException("Record not found with ID:" + id); 
 		}
 	}
 

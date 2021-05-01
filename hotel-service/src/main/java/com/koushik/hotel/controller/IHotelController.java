@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.koushik.hotel.entity.Hotel;
+import com.koushik.hotel.exceptions.RecordNotFoundException;
 import com.koushik.hotel.model.HotelDto;
 import com.koushik.hotel.response.ApiResponse;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import javassist.NotFoundException;
 @Api(value = "HotelController", description = "REST API to perform CRUD operations related to Hotel Entity")
 @RestController
 public interface IHotelController {
@@ -31,10 +31,10 @@ public interface IHotelController {
 	
 	@PutMapping("/hotel/{id}")
 	@ApiOperation(value = "To edit the existing hotel records in the system")
-	public ApiResponse<Hotel> modifyHotelRecord(@PathVariable int id, @RequestBody HotelDto hotel) throws NotFoundException;
+	public ApiResponse<Hotel> modifyHotelRecord(@PathVariable int id, @RequestBody HotelDto hotel) throws RecordNotFoundException;
 	
 	@DeleteMapping("/hotel/{id}")
 	@ApiOperation(value = "To Delete the hotel records from the system")
-	public ApiResponse<String> deleteHotelRecord(@PathVariable int id);
+	public ApiResponse<String> deleteHotelRecord(@PathVariable int id) throws RecordNotFoundException;
 	
 }
