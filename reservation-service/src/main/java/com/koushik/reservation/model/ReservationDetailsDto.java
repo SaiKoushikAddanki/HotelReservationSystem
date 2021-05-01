@@ -10,9 +10,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ReservationDetailsDto {
+	private int userId;
 	private String name;
-	private String hotelName;
-	private String roomType;
+	private int hotelId;
+	private RoomTypes roomType;
 	private Date bookingDate;
 	private int numberofDays;
 }
