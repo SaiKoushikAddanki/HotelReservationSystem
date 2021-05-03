@@ -5,7 +5,6 @@ import java.util.List;
 import com.googlecode.jmapper.annotations.JMap;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -15,7 +14,6 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 @ToString
 public class HotelDto {
 	private String name;

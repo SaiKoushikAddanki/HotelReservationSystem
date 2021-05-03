@@ -1,6 +1,7 @@
 package com.koushik.reservation.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.crossstore.ChangeSetPersister.NotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,11 +17,9 @@ public class ReservationController implements IReservationController {
 	ReservationService reservationService;
 
 	@Override
-	public ApiResponse<ReservationDetails> bookHotelWithDetails(ReservationDetailsDto reservationDetailsDto) {
-		ApiResponse<ReservationDetails> response = new ApiResponse<>();
-		response.setData(reservationService.bookHotelWithDetails(reservationDetailsDto));
-		response.setStatus(HttpStatus.CREATED);
-		return response;
+	public ApiResponse<ReservationDetails> bookHotelWithDetails(ReservationDetailsDto reservationDetailsDto) throws NotFoundException {
+		
+		return reservationService.bookHotelWithDetails(reservationDetailsDto);
 	}
 
 	@Override
