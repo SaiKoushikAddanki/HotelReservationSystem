@@ -40,7 +40,7 @@ public class HotelService implements IHotelService {
 	@Override
 	public Hotel modifyHotelRecord(int id, HotelDto hotelDto) throws RecordNotFoundException {
 		logger.info("START::modify Hotel Record method");
-		if (hotelRepository.findById(id).isPresent()) {
+		if (hotelRepository.findById(id) != null) {
 			logger.info("Inside IF condition as the recoed is present with ID:{}", id);
 			return hotelRepository.save(new HotelUtility().convert(hotelDto));
 		} else {
@@ -52,7 +52,7 @@ public class HotelService implements IHotelService {
 	@Override
 	public String deleteHotelRecordById(int id) throws RecordNotFoundException {
 		logger.info("START::Delete Hotel Record method");
-		if (hotelRepository.findById(id).isPresent()) {
+		if (hotelRepository.findById(id) != null) {
 			logger.info("Inside IF condition as the recoed is present with ID:{}", id);
 			hotelRepository.deleteById(id);
 			return "Delete successful for ID:" + id;

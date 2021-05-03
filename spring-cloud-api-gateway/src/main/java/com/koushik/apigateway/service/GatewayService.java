@@ -21,12 +21,7 @@ public class GatewayService {
 	@Autowired
 	@Lazy
 	private IFeignClientConfig client;
-	
-	public ResponseEntity<AuthenticationResponse> createAuthenticationToken(
-			@RequestBody AuthenticationRequest authenticationRequest) {
-		return client.generateTokenFromAuth(authenticationRequest);
-	}
-	
+		
 	public boolean validateToken(String token) {
 		log.info("START:: validate token method in Gateway service");
 		ApiResponse<Boolean> result = client.validateTokenProvided(token);

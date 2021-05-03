@@ -1,6 +1,8 @@
 package com.koushik.hotel.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
@@ -18,12 +20,11 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.koushik.hotel.entity.Hotel;
 import com.koushik.hotel.entity.RoomTypes;
+import com.koushik.hotel.exceptions.RecordNotFoundException;
 import com.koushik.hotel.model.HotelDto;
 import com.koushik.hotel.model.RoomDetailsDto;
 import com.koushik.hotel.repository.HotelRepository;
 import com.koushik.hotel.utility.HotelUtility;
-
-import javassist.NotFoundException;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
@@ -56,22 +57,46 @@ class HotelServiceTest {
 
 	@Test
 	void testAddHotelDetails() {
-
-		when(hotelRepository.save(hotel)).thenReturn(hotel);
+		when(hotelRepository.save(new HotelUtility().convert(hotelDto))).thenReturn(hotel);
 		assertThat(hotelService.insertHotelRecord(hotelDto)).isEqualTo(hotel);
 	}
 
 	@Test
-	void testModifyHotelRecord() throws NotFoundException {
-
+	void testModifyHotelRecord() {
 		when(hotelRepository.save(hotel)).thenReturn(hotel);
 		when(hotelRepository.findById(9)).thenReturn(Optional.ofNullable(hotel));
 		assertThat(hotelService.modifyHotelRecord(9, hotelDto)).isEqualTo(hotel);
+
+	}
+
+	@Test
+	void testModifyHotelRecordFailureCase() {
+		int id = 10;
+		when(hotelRepository.save(hotel)).thenReturn(hotel);
+		when(hotelRepository.findById(id)).thenReturn(null);
+		try {
+			hotelService.modifyHotelRecord(10, hotelDto);
+		} catch (Exception e) {
+			assertThat(e).isInstanceOf(RecordNotFoundException.class);
+		}
+
 	}
 
 	@Test
 	void testDeleteHotelRecord() {
-		assertThat(hotelService.deleteHotelRecordById(21)).isEqualTo("Record not found with ID:21");
+		try {
+			when(hotelRepository.findById(ArgumentMatchers.anyInt())).thenReturn(null);
+			hotelService.deleteHotelRecordById(21);
+		} catch (Exception e) {
+			assertThat(e).isInstanceOf(RecordNotFoundException.class).hasMessage("Record not found with ID:21");
+		}
+	}
+
+	@Test
+	void testDeleteHotelRecordSuccess() {
+		when(hotelRepository.findById(ArgumentMatchers.anyInt())).thenReturn(Optional.ofNullable(hotel));
+		hotelService.deleteHotelRecordById(41);
+		verify(hotelRepository, times(1)).deleteById(41);
 	}
 
 }
