@@ -18,10 +18,8 @@ public class ReservationController implements IReservationController {
 
 	@Override
 	public ApiResponse<ReservationDetails> bookHotelWithDetails(ReservationDetailsDto reservationDetailsDto) throws NotFoundException {
-		ApiResponse<ReservationDetails> response = new ApiResponse<>();
-		response.setData(reservationService.bookHotelWithDetails(reservationDetailsDto));
-		response.setStatus(HttpStatus.CREATED);
-		return response;
+		
+		return reservationService.bookHotelWithDetails(reservationDetailsDto);
 	}
 
 	@Override

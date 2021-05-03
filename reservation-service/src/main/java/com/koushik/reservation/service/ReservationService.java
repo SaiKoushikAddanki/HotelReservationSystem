@@ -31,14 +31,17 @@ public class ReservationService implements IReservationService {
 
 	@Override
 	@CircuitBreaker(name = RESERVATION_SERVICE,fallbackMethod = "hotelServiceFallback")
-	public ReservationDetails bookHotelWithDetails(ReservationDetailsDto reservationDetailsDto) throws RecordNotFoundException {
+	public ApiResponse<ReservationDetails> bookHotelWithDetails(ReservationDetailsDto reservationDetailsDto) throws RecordNotFoundException {
 		ReservationDetails reservationDetails = new ReservationDetailsUtility().convert(reservationDetailsDto);
 		ApiResponse<Hotel> response = client.getHotelDetailsById(reservationDetailsDto.getHotelId());
 		reservationDetails.setHotelName(response.getData().getName());
 		reservationDetails.setCost((response.getData().getRoomDetails().stream()
 				.filter(r -> reservationDetailsDto.getRoomType().equals(r.getRoomtypes())).findAny().orElseThrow(RecordNotFoundException::new)
 				.getPrice()) * reservationDetailsDto.getNumberofDays());
-		return reservationRepository.save(reservationDetails);
+		ApiResponse<ReservationDetails> mainResponse = new ApiResponse<>();
+		mainResponse.setStatus(HttpStatus.CREATED);
+		mainResponse.setData(reservationRepository.save(reservationDetails));
+		return mainResponse;
 	}
 	
 	public ApiResponse<String> hotelServiceFallback(Exception ex) {

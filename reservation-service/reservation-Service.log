@@ -700,3 +700,663 @@ Identify and stop the process that's listening on port 8093 or configure this ap
 2021-05-02 00:16:05.660  INFO [reservation-service,,] 15588 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
 2021-05-02 00:16:05.684  INFO [reservation-service,,] 15588 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
 2021-05-02 00:16:05.684  INFO [reservation-service,,] 15588 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1267 ms
+2021-05-02 00:26:17.770  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : Starting ReservationServiceApplication using Java 1.8.0_281 on EPINHYDW07A3 with PID 25364 (C:\Programming\hotel-reservation-system\reservation-service\target\classes started by Saikoushik_Addanki in C:\Programming\hotel-reservation-system\reservation-service)
+2021-05-02 00:26:17.774  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : No active profile set, falling back to default profiles: default
+2021-05-02 00:26:17.874  INFO [reservation-service,,] 25364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-02 00:26:17.874  INFO [reservation-service,,] 25364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-02 00:26:20.954  INFO [reservation-service,,] 25364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-02 00:26:21.304  INFO [reservation-service,,] 25364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 331 ms. Found 1 JPA repository interfaces.
+2021-05-02 00:26:22.266  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8cc96ec4-6e63-36f9-82f9-e9a4960c8897
+2021-05-02 00:26:24.217  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2021-05-02 00:26:24.234  INFO [reservation-service,,] 25364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-02 00:26:24.235  INFO [reservation-service,,] 25364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-02 00:26:24.582  INFO [reservation-service,,] 25364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-02 00:26:24.583  INFO [reservation-service,,] 25364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6707 ms
+2021-05-02 00:26:28.424  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:26:29.754  INFO [reservation-service,,] 25364 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-02 00:26:29.850  INFO [reservation-service,,] 25364 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-02 00:26:30.126  INFO [reservation-service,,] 25364 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-02 00:26:30.369  INFO [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-02 00:26:30.376  WARN [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-05-02 00:26:31.674  INFO [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-02 00:26:31.705  INFO [reservation-service,,] 25364 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-02 00:26:33.153  INFO [reservation-service,,] 25364 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-02 00:26:33.178  INFO [reservation-service,,] 25364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:26:33.437  WARN [reservation-service,,] 25364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-05-02 00:26:34.414  WARN [reservation-service,,] 25364 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-02 00:26:35.761  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-05-02 00:26:36.171  INFO [reservation-service,,] 25364 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-02 00:26:36.787  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:26:39.682  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:26:39.734  INFO [reservation-service,,] 25364 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-05-02 00:26:40.722  WARN [reservation-service,,] 25364 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-05-02 00:26:40.916  INFO [reservation-service,,] 25364 --- [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-02 00:26:40.916  INFO [reservation-service,,] 25364 --- [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-02 00:26:40.920  INFO [reservation-service,,] 25364 --- [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-05-02 00:26:41.244  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-05-02 00:26:41.321  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-05-02 00:26:41.332  INFO [reservation-service,,] 25364 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-02 00:26:41.645  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-02 00:26:41.647  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-02 00:26:41.647  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-02 00:26:41.647  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-02 00:26:41.647  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-02 00:26:41.647  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-05-02 00:26:41.647  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-02 00:26:42.528  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-05-02 00:26:42.534  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-05-02 00:26:42.540  INFO [reservation-service,,] 25364 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-05-02 00:26:42.550  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1619895402548 with initial instances count: 0
+2021-05-02 00:26:42.589  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application RESERVATION-SERVICE with eureka with status UP
+2021-05-02 00:26:42.591  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619895402591, current=UP, previous=STARTING]
+2021-05-02 00:26:42.596  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:26:42.646  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2021-05-02 00:26:42.649  INFO [reservation-service,,] 25364 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8093
+2021-05-02 00:26:42.787  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:26:44.107  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:26:44.109  INFO [reservation-service,,] 25364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-02 00:26:44.166  INFO [reservation-service,,] 25364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-02 00:26:44.226  INFO [reservation-service,,] 25364 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-02 00:26:44.423  INFO [reservation-service,,] 25364 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-05-02 00:26:44.489  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : Started ReservationServiceApplication in 28.987 seconds (JVM running for 31.167)
+2021-05-02 00:26:56.141 ERROR [reservation-service,,] 25364 --- [http-nio-8093-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.reflect.UndeclaredThrowableException] with root cause
+
+java.lang.NoSuchMethodException: class com.koushik.reservation.entity.ReservationDetails class com.koushik.reservation.service.ReservationService.hotelServiceFallback(class com.koushik.reservation.model.ReservationDetailsDto,class java.lang.Throwable)
+	at io.github.resilience4j.fallback.FallbackMethod.create(FallbackMethod.java:92) ~[resilience4j-spring-1.7.0.jar:1.7.0]
+	at io.github.resilience4j.circuitbreaker.configure.CircuitBreakerAspect.circuitBreakerAroundAdvice(CircuitBreakerAspect.java:115) ~[resilience4j-spring-1.7.0.jar:1.7.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_281]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_281]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_281]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.6.jar:5.3.6]
+	at com.koushik.reservation.service.ReservationService$$EnhancerBySpringCGLIB$$d8f6ba96.bookHotelWithDetails(<generated>) ~[classes/:na]
+	at com.koushik.reservation.controller.ReservationController.bookHotelWithDetails(ReservationController.java:22) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_281]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_281]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_281]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:89) ~[spring-cloud-sleuth-instrumentation-3.0.2.jar:3.0.2]
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:114) ~[spring-cloud-sleuth-autoconfigure-3.0.2.jar:3.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_281]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_281]
+
+2021-05-02 00:27:12.540  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-02 00:27:12.541  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-02 00:27:12.542  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-02 00:27:12.543  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-02 00:27:12.544  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-02 00:27:12.545  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2021-05-02 00:27:12.545  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-02 00:27:12.586  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-05-02 00:31:41.669  INFO [reservation-service,,] 25364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-02 00:36:41.686  INFO [reservation-service,,] 25364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-02 00:36:54.772  INFO [reservation-service,,] 25364 --- [Thread-3] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application RESERVATION-SERVICE with eureka with status DOWN
+2021-05-02 00:36:54.774  INFO [reservation-service,,] 25364 --- [Thread-3] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619896014773, current=DOWN, previous=UP]
+2021-05-02 00:36:54.775  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:36:54.801  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:36:55.044  INFO [reservation-service,,] 25364 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:36:55.059  INFO [reservation-service,,] 25364 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:36:55.074  INFO [reservation-service,,] 25364 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-05-02 00:36:55.101  INFO [reservation-service,,] 25364 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-05-02 00:36:55.130  INFO [reservation-service,,] 25364 --- [Thread-3] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-05-02 00:36:58.152  INFO [reservation-service,,] 25364 --- [Thread-3] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-05-02 00:36:58.172  INFO [reservation-service,,] 25364 --- [Thread-3] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - deregister  status: 200
+2021-05-02 00:36:58.180  INFO [reservation-service,,] 25364 --- [Thread-3] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2021-05-02 00:36:59.970  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : Starting ReservationServiceApplication using Java 1.8.0_281 on EPINHYDW07A3 with PID 25364 (C:\Programming\hotel-reservation-system\reservation-service\target\classes started by Saikoushik_Addanki in C:\Programming\hotel-reservation-system\reservation-service)
+2021-05-02 00:36:59.971  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : No active profile set, falling back to default profiles: default
+2021-05-02 00:37:00.824  INFO [reservation-service,,] 25364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-02 00:37:00.846  INFO [reservation-service,,] 25364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+2021-05-02 00:37:01.047  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8cc96ec4-6e63-36f9-82f9-e9a4960c8897
+2021-05-02 00:37:01.702  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2021-05-02 00:37:01.703  INFO [reservation-service,,] 25364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-02 00:37:01.704  INFO [reservation-service,,] 25364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-02 00:37:01.738  INFO [reservation-service,,] 25364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-02 00:37:01.739  INFO [reservation-service,,] 25364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1763 ms
+2021-05-02 00:37:04.060  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:37:04.946  INFO [reservation-service,,] 25364 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-02 00:37:04.957  INFO [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-05-02 00:37:04.958  WARN [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-05-02 00:37:04.983  INFO [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-05-02 00:37:04.984  INFO [reservation-service,,] 25364 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-02 00:37:05.052  INFO [reservation-service,,] 25364 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-02 00:37:05.053  INFO [reservation-service,,] 25364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:37:05.204  WARN [reservation-service,,] 25364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-05-02 00:37:05.588  WARN [reservation-service,,] 25364 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-02 00:37:06.282  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-05-02 00:37:06.484  INFO [reservation-service,,] 25364 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-02 00:37:06.816  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:37:09.050  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:37:09.115  INFO [reservation-service,,] 25364 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-05-02 00:37:09.782  WARN [reservation-service,,] 25364 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-05-02 00:37:09.947  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-05-02 00:37:09.956  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-05-02 00:37:09.956  INFO [reservation-service,,] 25364 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-02 00:37:09.962  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-02 00:37:09.962  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-02 00:37:09.962  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-02 00:37:09.963  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-02 00:37:09.963  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-02 00:37:09.963  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-05-02 00:37:09.963  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-02 00:37:09.998  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-05-02 00:37:10.000  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-05-02 00:37:10.001  INFO [reservation-service,,] 25364 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-05-02 00:37:10.003  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1619896030003 with initial instances count: 0
+2021-05-02 00:37:10.024  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application RESERVATION-SERVICE with eureka with status UP
+2021-05-02 00:37:10.025  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619896030025, current=UP, previous=STARTING]
+2021-05-02 00:37:10.025  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:37:10.033  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2021-05-02 00:37:10.034  INFO [reservation-service,,] 25364 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8093
+2021-05-02 00:37:10.053  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:37:11.369  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:37:11.371  INFO [reservation-service,,] 25364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-02 00:37:11.374  INFO [reservation-service,,] 25364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-02 00:37:11.390  INFO [reservation-service,,] 25364 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-02 00:37:11.434  INFO [reservation-service,,] 25364 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-05-02 00:37:11.477  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : Started ReservationServiceApplication in 12.93 seconds (JVM running for 658.151)
+2021-05-02 00:37:11.483  INFO [reservation-service,,] 25364 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-05-02 00:37:39.915  INFO [reservation-service,,] 25364 --- [Thread-11] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application RESERVATION-SERVICE with eureka with status DOWN
+2021-05-02 00:37:39.917  INFO [reservation-service,,] 25364 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619896059917, current=DOWN, previous=UP]
+2021-05-02 00:37:39.917  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:37:39.935  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:37:40.003  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-02 00:37:40.003  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-02 00:37:40.003  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-02 00:37:40.004  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-02 00:37:40.004  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-02 00:37:40.004  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2021-05-02 00:37:40.005  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-02 00:37:40.023  INFO [reservation-service,,] 25364 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-05-02 00:37:40.193  INFO [reservation-service,,] 25364 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:37:40.199  INFO [reservation-service,,] 25364 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:37:40.203  INFO [reservation-service,,] 25364 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-05-02 00:37:40.223  INFO [reservation-service,,] 25364 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-05-02 00:37:41.230  INFO [reservation-service,,] 25364 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-05-02 00:37:44.249  INFO [reservation-service,,] 25364 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-05-02 00:37:44.270  INFO [reservation-service,,] 25364 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - deregister  status: 200
+2021-05-02 00:37:44.282  INFO [reservation-service,,] 25364 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2021-05-02 00:37:46.438  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : Starting ReservationServiceApplication using Java 1.8.0_281 on EPINHYDW07A3 with PID 25364 (C:\Programming\hotel-reservation-system\reservation-service\target\classes started by Saikoushik_Addanki in C:\Programming\hotel-reservation-system\reservation-service)
+2021-05-02 00:37:46.438  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : No active profile set, falling back to default profiles: default
+2021-05-02 00:37:47.202  INFO [reservation-service,,] 25364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-02 00:37:47.224  INFO [reservation-service,,] 25364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+2021-05-02 00:37:47.414  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8cc96ec4-6e63-36f9-82f9-e9a4960c8897
+2021-05-02 00:37:48.155  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2021-05-02 00:37:48.157  INFO [reservation-service,,] 25364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-02 00:37:48.157  INFO [reservation-service,,] 25364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-02 00:37:48.225  INFO [reservation-service,,] 25364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-02 00:37:48.225  INFO [reservation-service,,] 25364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1783 ms
+2021-05-02 00:37:50.838  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:37:51.636  INFO [reservation-service,,] 25364 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-02 00:37:51.643  INFO [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-05-02 00:37:51.643  WARN [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-05-02 00:37:51.665  INFO [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-05-02 00:37:51.666  INFO [reservation-service,,] 25364 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-02 00:37:51.721  INFO [reservation-service,,] 25364 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-02 00:37:51.722  INFO [reservation-service,,] 25364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:37:51.839  WARN [reservation-service,,] 25364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-05-02 00:37:52.287  WARN [reservation-service,,] 25364 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-02 00:37:52.863  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-05-02 00:37:53.049  INFO [reservation-service,,] 25364 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-02 00:37:53.458  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:37:56.077  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:37:56.150  INFO [reservation-service,,] 25364 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-05-02 00:37:57.105  WARN [reservation-service,,] 25364 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-05-02 00:37:57.330  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-05-02 00:37:57.342  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-05-02 00:37:57.343  INFO [reservation-service,,] 25364 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-02 00:37:57.345  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-02 00:37:57.346  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-02 00:37:57.346  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-02 00:37:57.346  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-02 00:37:57.346  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-02 00:37:57.346  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-05-02 00:37:57.347  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-02 00:37:57.378  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-05-02 00:37:57.380  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-05-02 00:37:57.381  INFO [reservation-service,,] 25364 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-05-02 00:37:57.382  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1619896077382 with initial instances count: 1
+2021-05-02 00:37:57.410  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application RESERVATION-SERVICE with eureka with status UP
+2021-05-02 00:37:57.410  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619896077410, current=UP, previous=STARTING]
+2021-05-02 00:37:57.411  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:37:57.416  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2021-05-02 00:37:57.417  INFO [reservation-service,,] 25364 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8093
+2021-05-02 00:37:57.429  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:37:58.760  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:37:58.761  INFO [reservation-service,,] 25364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-02 00:37:58.764  INFO [reservation-service,,] 25364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-02 00:37:58.776  INFO [reservation-service,,] 25364 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-02 00:37:58.820  INFO [reservation-service,,] 25364 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-05-02 00:37:58.864  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : Started ReservationServiceApplication in 13.845 seconds (JVM running for 705.538)
+2021-05-02 00:37:58.868  INFO [reservation-service,,] 25364 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-05-02 00:38:05.531  INFO [reservation-service,,] 25364 --- [Thread-18] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application RESERVATION-SERVICE with eureka with status DOWN
+2021-05-02 00:38:05.532  INFO [reservation-service,,] 25364 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619896085532, current=DOWN, previous=UP]
+2021-05-02 00:38:05.533  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:38:05.544  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:38:05.876  INFO [reservation-service,,] 25364 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:38:05.882  INFO [reservation-service,,] 25364 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:38:05.886  INFO [reservation-service,,] 25364 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-05-02 00:38:05.902  INFO [reservation-service,,] 25364 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-05-02 00:38:06.916  INFO [reservation-service,,] 25364 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-05-02 00:38:09.926  INFO [reservation-service,,] 25364 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-05-02 00:38:09.944  INFO [reservation-service,,] 25364 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - deregister  status: 200
+2021-05-02 00:38:09.949  INFO [reservation-service,,] 25364 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2021-05-02 00:38:12.141  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : Starting ReservationServiceApplication using Java 1.8.0_281 on EPINHYDW07A3 with PID 25364 (C:\Programming\hotel-reservation-system\reservation-service\target\classes started by Saikoushik_Addanki in C:\Programming\hotel-reservation-system\reservation-service)
+2021-05-02 00:38:12.141  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : No active profile set, falling back to default profiles: default
+2021-05-02 00:38:12.840  INFO [reservation-service,,] 25364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-02 00:38:12.861  INFO [reservation-service,,] 25364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+2021-05-02 00:38:13.037  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8cc96ec4-6e63-36f9-82f9-e9a4960c8897
+2021-05-02 00:38:13.407  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2021-05-02 00:38:13.408  INFO [reservation-service,,] 25364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-02 00:38:13.408  INFO [reservation-service,,] 25364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-02 00:38:13.447  INFO [reservation-service,,] 25364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-02 00:38:13.447  INFO [reservation-service,,] 25364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1301 ms
+2021-05-02 00:38:15.771  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:38:16.889  INFO [reservation-service,,] 25364 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-02 00:38:16.896  INFO [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-05-02 00:38:16.896  WARN [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-05-02 00:38:16.919  INFO [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2021-05-02 00:38:16.920  INFO [reservation-service,,] 25364 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-02 00:38:16.973  INFO [reservation-service,,] 25364 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-02 00:38:16.973  INFO [reservation-service,,] 25364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:38:17.115  WARN [reservation-service,,] 25364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-05-02 00:38:17.646  WARN [reservation-service,,] 25364 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-02 00:38:18.489  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-05-02 00:38:18.806  INFO [reservation-service,,] 25364 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-02 00:38:19.226  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:38:21.393  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:38:21.455  INFO [reservation-service,,] 25364 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-05-02 00:38:22.131  WARN [reservation-service,,] 25364 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-05-02 00:38:22.320  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-05-02 00:38:22.328  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-05-02 00:38:22.328  INFO [reservation-service,,] 25364 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-02 00:38:22.330  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-02 00:38:22.330  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-02 00:38:22.330  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-02 00:38:22.331  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-02 00:38:22.331  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-02 00:38:22.331  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-05-02 00:38:22.331  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-02 00:38:22.356  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-05-02 00:38:22.357  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-05-02 00:38:22.358  INFO [reservation-service,,] 25364 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-05-02 00:38:22.359  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1619896102359 with initial instances count: 1
+2021-05-02 00:38:22.384  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application RESERVATION-SERVICE with eureka with status UP
+2021-05-02 00:38:22.384  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619896102384, current=UP, previous=STARTING]
+2021-05-02 00:38:22.385  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:38:22.392  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2021-05-02 00:38:22.392  INFO [reservation-service,,] 25364 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8093
+2021-05-02 00:38:22.404  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:38:23.704  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:38:23.705  INFO [reservation-service,,] 25364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-02 00:38:23.707  INFO [reservation-service,,] 25364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-02 00:38:23.714  INFO [reservation-service,,] 25364 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-02 00:38:23.749  INFO [reservation-service,,] 25364 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-05-02 00:38:23.800  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : Started ReservationServiceApplication in 13.074 seconds (JVM running for 730.473)
+2021-05-02 00:38:23.804  INFO [reservation-service,,] 25364 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-05-02 00:38:53.847  INFO [reservation-service,,] 25364 --- [Thread-25] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application RESERVATION-SERVICE with eureka with status DOWN
+2021-05-02 00:38:53.847  INFO [reservation-service,,] 25364 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619896133847, current=DOWN, previous=UP]
+2021-05-02 00:38:53.848  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:38:53.853  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:38:54.126  INFO [reservation-service,,] 25364 --- [Thread-25] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:38:54.136  INFO [reservation-service,,] 25364 --- [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:38:54.141  INFO [reservation-service,,] 25364 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2021-05-02 00:38:54.161  INFO [reservation-service,,] 25364 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2021-05-02 00:38:55.176  INFO [reservation-service,,] 25364 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-05-02 00:38:58.196  INFO [reservation-service,,] 25364 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-05-02 00:38:58.215  INFO [reservation-service,,] 25364 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - deregister  status: 200
+2021-05-02 00:38:58.226  INFO [reservation-service,,] 25364 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2021-05-02 00:39:00.260  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : Starting ReservationServiceApplication using Java 1.8.0_281 on EPINHYDW07A3 with PID 25364 (C:\Programming\hotel-reservation-system\reservation-service\target\classes started by Saikoushik_Addanki in C:\Programming\hotel-reservation-system\reservation-service)
+2021-05-02 00:39:00.260  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : No active profile set, falling back to default profiles: default
+2021-05-02 00:39:01.114  INFO [reservation-service,,] 25364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-02 00:39:01.135  INFO [reservation-service,,] 25364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+2021-05-02 00:39:01.323  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8cc96ec4-6e63-36f9-82f9-e9a4960c8897
+2021-05-02 00:39:01.912  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2021-05-02 00:39:01.913  INFO [reservation-service,,] 25364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-02 00:39:01.913  INFO [reservation-service,,] 25364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-02 00:39:01.942  INFO [reservation-service,,] 25364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-02 00:39:01.942  INFO [reservation-service,,] 25364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1677 ms
+2021-05-02 00:39:04.308  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:39:05.185  INFO [reservation-service,,] 25364 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-02 00:39:05.198  INFO [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2021-05-02 00:39:05.198  WARN [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-05-02 00:39:05.219  INFO [reservation-service,,] 25364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2021-05-02 00:39:05.219  INFO [reservation-service,,] 25364 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-02 00:39:05.268  INFO [reservation-service,,] 25364 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-02 00:39:05.269  INFO [reservation-service,,] 25364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:39:05.372  WARN [reservation-service,,] 25364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-05-02 00:39:05.780  WARN [reservation-service,,] 25364 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-02 00:39:06.587  INFO [reservation-service,,] 25364 --- [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-05-02 00:39:06.698  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-05-02 00:39:06.939  INFO [reservation-service,,] 25364 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-02 00:39:07.229  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:39:09.335  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:39:09.395  INFO [reservation-service,,] 25364 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-05-02 00:39:10.036  WARN [reservation-service,,] 25364 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-05-02 00:39:10.239  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-05-02 00:39:10.248  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-05-02 00:39:10.248  INFO [reservation-service,,] 25364 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-02 00:39:10.249  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-02 00:39:10.249  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-02 00:39:10.250  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-02 00:39:10.250  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-02 00:39:10.250  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-02 00:39:10.250  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-05-02 00:39:10.250  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-02 00:39:10.272  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-05-02 00:39:10.273  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-05-02 00:39:10.275  INFO [reservation-service,,] 25364 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-05-02 00:39:10.275  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1619896150275 with initial instances count: 0
+2021-05-02 00:39:10.299  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application RESERVATION-SERVICE with eureka with status UP
+2021-05-02 00:39:10.299  INFO [reservation-service,,] 25364 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619896150299, current=UP, previous=STARTING]
+2021-05-02 00:39:10.300  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:39:10.306  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2021-05-02 00:39:10.307  INFO [reservation-service,,] 25364 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8093
+2021-05-02 00:39:10.319  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:39:11.635  INFO [reservation-service,,] 25364 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:39:11.637  INFO [reservation-service,,] 25364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-02 00:39:11.640  INFO [reservation-service,,] 25364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-02 00:39:11.655  INFO [reservation-service,,] 25364 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-02 00:39:11.697  INFO [reservation-service,,] 25364 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-05-02 00:39:11.735  INFO [reservation-service,,] 25364 --- [restartedMain] c.k.r.ReservationServiceApplication      : Started ReservationServiceApplication in 12.821 seconds (JVM running for 778.408)
+2021-05-02 00:39:11.737  INFO [reservation-service,,] 25364 --- [RMI TCP Connection(19)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application RESERVATION-SERVICE with eureka with status DOWN
+2021-05-02 00:39:11.737  INFO [reservation-service,,] 25364 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619896151737, current=DOWN, previous=UP]
+2021-05-02 00:39:11.737  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:39:11.743  INFO [reservation-service,,] 25364 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-05-02 00:39:11.744  INFO [reservation-service,,] 25364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:39:11.961  INFO [reservation-service,,] 25364 --- [RMI TCP Connection(19)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:39:11.967  INFO [reservation-service,,] 25364 --- [RMI TCP Connection(19)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:39:11.970  INFO [reservation-service,,] 25364 --- [RMI TCP Connection(19)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2021-05-02 00:39:11.990  INFO [reservation-service,,] 25364 --- [RMI TCP Connection(19)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2021-05-02 00:39:13.008  INFO [reservation-service,,] 25364 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-05-02 00:39:16.014  INFO [reservation-service,,] 25364 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-05-02 00:39:16.037  INFO [reservation-service,,] 25364 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - deregister  status: 200
+2021-05-02 00:39:16.042  INFO [reservation-service,,] 25364 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2021-05-02 00:39:46.613  INFO [reservation-service,,] 27204 --- [restartedMain] c.k.r.ReservationServiceApplication      : Starting ReservationServiceApplication using Java 1.8.0_281 on EPINHYDW07A3 with PID 27204 (C:\Programming\hotel-reservation-system\reservation-service\target\classes started by Saikoushik_Addanki in C:\Programming\hotel-reservation-system\reservation-service)
+2021-05-02 00:39:46.618  INFO [reservation-service,,] 27204 --- [restartedMain] c.k.r.ReservationServiceApplication      : No active profile set, falling back to default profiles: default
+2021-05-02 00:39:46.708  INFO [reservation-service,,] 27204 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-02 00:39:46.708  INFO [reservation-service,,] 27204 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-02 00:39:49.194  INFO [reservation-service,,] 27204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-02 00:39:49.502  INFO [reservation-service,,] 27204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 297 ms. Found 1 JPA repository interfaces.
+2021-05-02 00:39:50.430  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8cc96ec4-6e63-36f9-82f9-e9a4960c8897
+2021-05-02 00:39:52.184  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2021-05-02 00:39:52.203  INFO [reservation-service,,] 27204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-02 00:39:52.204  INFO [reservation-service,,] 27204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-02 00:39:52.524  INFO [reservation-service,,] 27204 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-02 00:39:52.524  INFO [reservation-service,,] 27204 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5814 ms
+2021-05-02 00:39:56.457  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:39:57.656  INFO [reservation-service,,] 27204 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-02 00:39:57.731  INFO [reservation-service,,] 27204 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-05-02 00:39:57.971  INFO [reservation-service,,] 27204 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-02 00:39:58.187  INFO [reservation-service,,] 27204 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-02 00:39:58.194  WARN [reservation-service,,] 27204 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-05-02 00:39:59.416  INFO [reservation-service,,] 27204 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-02 00:39:59.456  INFO [reservation-service,,] 27204 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-02 00:40:00.662  INFO [reservation-service,,] 27204 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-02 00:40:00.679  INFO [reservation-service,,] 27204 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:40:00.877  WARN [reservation-service,,] 27204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-05-02 00:40:01.672  WARN [reservation-service,,] 27204 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-02 00:40:02.842  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-05-02 00:40:03.207  INFO [reservation-service,,] 27204 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-02 00:40:03.860  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:40:05.598  INFO [reservation-service,,] 27204 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-02 00:40:05.598  INFO [reservation-service,,] 27204 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-02 00:40:05.603  INFO [reservation-service,,] 27204 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-05-02 00:40:06.519  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:40:06.591  INFO [reservation-service,,] 27204 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-05-02 00:40:07.549  WARN [reservation-service,,] 27204 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-05-02 00:40:07.891  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-05-02 00:40:07.965  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-05-02 00:40:07.976  INFO [reservation-service,,] 27204 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-02 00:40:08.287  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-02 00:40:08.287  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-02 00:40:08.287  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-02 00:40:08.288  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-02 00:40:08.288  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-02 00:40:08.288  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-05-02 00:40:08.288  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-02 00:40:08.704  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-05-02 00:40:08.707  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-05-02 00:40:08.713  INFO [reservation-service,,] 27204 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-05-02 00:40:08.721  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1619896208719 with initial instances count: 0
+2021-05-02 00:40:08.753  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application RESERVATION-SERVICE with eureka with status UP
+2021-05-02 00:40:08.755  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619896208755, current=UP, previous=STARTING]
+2021-05-02 00:40:08.758  INFO [reservation-service,,] 27204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:40:08.798  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2021-05-02 00:40:08.800  INFO [reservation-service,,] 27204 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8093
+2021-05-02 00:40:08.816  INFO [reservation-service,,] 27204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:40:10.236  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:40:10.237  INFO [reservation-service,,] 27204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-02 00:40:10.273  INFO [reservation-service,,] 27204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-02 00:40:10.334  INFO [reservation-service,,] 27204 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-02 00:40:10.530  INFO [reservation-service,,] 27204 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-05-02 00:40:10.599  INFO [reservation-service,,] 27204 --- [restartedMain] c.k.r.ReservationServiceApplication      : Started ReservationServiceApplication in 26.15 seconds (JVM running for 28.381)
+2021-05-02 00:40:36.756  INFO [reservation-service,20d9c7ce3559265a,20d9c7ce3559265a] 27204 --- [http-nio-8093-exec-1] org.reflections.Reflections              : Reflections took 321 ms to scan 200 urls, producing 0 keys and 0 values 
+2021-05-02 00:40:38.714  INFO [reservation-service,,] 27204 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-02 00:40:38.715  INFO [reservation-service,,] 27204 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-02 00:40:38.715  INFO [reservation-service,,] 27204 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-02 00:40:38.715  INFO [reservation-service,,] 27204 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-02 00:40:38.716  INFO [reservation-service,,] 27204 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-02 00:40:38.716  INFO [reservation-service,,] 27204 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2021-05-02 00:40:38.717  INFO [reservation-service,,] 27204 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-02 00:40:38.745  INFO [reservation-service,,] 27204 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-05-02 00:40:39.168 ERROR [reservation-service,20d9c7ce3559265a,20d9c7ce3559265a] 27204 --- [http-nio-8093-exec-1] c.k.r.service.ReservationService         : inside the circuit breaker fall back method.
+2021-05-02 00:40:39.169 ERROR [reservation-service,20d9c7ce3559265a,20d9c7ce3559265a] 27204 --- [http-nio-8093-exec-1] c.k.r.service.ReservationService         : end of the circuit breaker fall back method.
+2021-05-02 00:41:01.384  INFO [reservation-service,,] 27204 --- [Thread-4] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application RESERVATION-SERVICE with eureka with status DOWN
+2021-05-02 00:41:01.385  INFO [reservation-service,,] 27204 --- [Thread-4] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619896261385, current=DOWN, previous=UP]
+2021-05-02 00:41:01.386  INFO [reservation-service,,] 27204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:41:01.404  INFO [reservation-service,,] 27204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:41:01.643  INFO [reservation-service,,] 27204 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:41:01.657  INFO [reservation-service,,] 27204 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:41:01.670  INFO [reservation-service,,] 27204 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-05-02 00:41:01.688  INFO [reservation-service,,] 27204 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-05-02 00:41:02.388  INFO [reservation-service,,] 27204 --- [Thread-4] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-05-02 00:41:05.403  INFO [reservation-service,,] 27204 --- [Thread-4] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-05-02 00:41:05.418  INFO [reservation-service,,] 27204 --- [Thread-4] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - deregister  status: 200
+2021-05-02 00:41:05.426  INFO [reservation-service,,] 27204 --- [Thread-4] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2021-05-02 00:41:07.252  INFO [reservation-service,,] 27204 --- [restartedMain] c.k.r.ReservationServiceApplication      : Starting ReservationServiceApplication using Java 1.8.0_281 on EPINHYDW07A3 with PID 27204 (C:\Programming\hotel-reservation-system\reservation-service\target\classes started by Saikoushik_Addanki in C:\Programming\hotel-reservation-system\reservation-service)
+2021-05-02 00:41:07.253  INFO [reservation-service,,] 27204 --- [restartedMain] c.k.r.ReservationServiceApplication      : No active profile set, falling back to default profiles: default
+2021-05-02 00:41:08.162  INFO [reservation-service,,] 27204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-02 00:41:08.194  INFO [reservation-service,,] 27204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2021-05-02 00:41:08.406  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8cc96ec4-6e63-36f9-82f9-e9a4960c8897
+2021-05-02 00:41:09.042  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2021-05-02 00:41:09.043  INFO [reservation-service,,] 27204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-02 00:41:09.043  INFO [reservation-service,,] 27204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-02 00:41:09.077  INFO [reservation-service,,] 27204 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-02 00:41:09.078  INFO [reservation-service,,] 27204 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1820 ms
+2021-05-02 00:41:11.441  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:41:12.311  INFO [reservation-service,,] 27204 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-02 00:41:12.320  INFO [reservation-service,,] 27204 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-05-02 00:41:12.321  WARN [reservation-service,,] 27204 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-05-02 00:41:12.348  INFO [reservation-service,,] 27204 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-05-02 00:41:12.348  INFO [reservation-service,,] 27204 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-02 00:41:12.421  INFO [reservation-service,,] 27204 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-02 00:41:12.422  INFO [reservation-service,,] 27204 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:41:12.558  WARN [reservation-service,,] 27204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-05-02 00:41:13.018  WARN [reservation-service,,] 27204 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-02 00:41:13.686  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-05-02 00:41:13.890  INFO [reservation-service,,] 27204 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-02 00:41:14.209  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:41:16.399  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:41:16.466  INFO [reservation-service,,] 27204 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-05-02 00:41:17.117  WARN [reservation-service,,] 27204 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-05-02 00:41:17.311  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-05-02 00:41:17.322  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-05-02 00:41:17.322  INFO [reservation-service,,] 27204 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-02 00:41:17.329  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-02 00:41:17.329  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-02 00:41:17.329  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-02 00:41:17.330  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-02 00:41:17.330  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-02 00:41:17.330  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-05-02 00:41:17.330  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-02 00:41:17.362  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-05-02 00:41:17.363  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-05-02 00:41:17.364  INFO [reservation-service,,] 27204 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-05-02 00:41:17.366  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1619896277366 with initial instances count: 1
+2021-05-02 00:41:17.394  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application RESERVATION-SERVICE with eureka with status UP
+2021-05-02 00:41:17.395  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619896277395, current=UP, previous=STARTING]
+2021-05-02 00:41:17.396  INFO [reservation-service,,] 27204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:41:17.404  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2021-05-02 00:41:17.405  INFO [reservation-service,,] 27204 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8093
+2021-05-02 00:41:17.430  INFO [reservation-service,,] 27204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:41:18.725  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:41:18.727  INFO [reservation-service,,] 27204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-02 00:41:18.730  INFO [reservation-service,,] 27204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-02 00:41:18.746  INFO [reservation-service,,] 27204 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-02 00:41:18.806  INFO [reservation-service,,] 27204 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-05-02 00:41:18.857  INFO [reservation-service,,] 27204 --- [restartedMain] c.k.r.ReservationServiceApplication      : Started ReservationServiceApplication in 13.027 seconds (JVM running for 96.641)
+2021-05-02 00:41:18.864  INFO [reservation-service,,] 27204 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-05-02 00:41:37.433  INFO [reservation-service,,] 27204 --- [Thread-11] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application RESERVATION-SERVICE with eureka with status DOWN
+2021-05-02 00:41:37.434  INFO [reservation-service,,] 27204 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619896297434, current=DOWN, previous=UP]
+2021-05-02 00:41:37.434  INFO [reservation-service,,] 27204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:41:37.446  INFO [reservation-service,,] 27204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:41:37.686  INFO [reservation-service,,] 27204 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:41:37.692  INFO [reservation-service,,] 27204 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:41:37.696  INFO [reservation-service,,] 27204 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-05-02 00:41:37.715  INFO [reservation-service,,] 27204 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-05-02 00:41:38.735  INFO [reservation-service,,] 27204 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-05-02 00:41:41.743  INFO [reservation-service,,] 27204 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-05-02 00:41:41.762  INFO [reservation-service,,] 27204 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - deregister  status: 200
+2021-05-02 00:41:41.779  INFO [reservation-service,,] 27204 --- [Thread-11] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2021-05-02 00:41:43.730  INFO [reservation-service,,] 27204 --- [restartedMain] c.k.r.ReservationServiceApplication      : Starting ReservationServiceApplication using Java 1.8.0_281 on EPINHYDW07A3 with PID 27204 (C:\Programming\hotel-reservation-system\reservation-service\target\classes started by Saikoushik_Addanki in C:\Programming\hotel-reservation-system\reservation-service)
+2021-05-02 00:41:43.731  INFO [reservation-service,,] 27204 --- [restartedMain] c.k.r.ReservationServiceApplication      : No active profile set, falling back to default profiles: default
+2021-05-02 00:41:44.533  INFO [reservation-service,,] 27204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-02 00:41:44.569  INFO [reservation-service,,] 27204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2021-05-02 00:41:44.785  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8cc96ec4-6e63-36f9-82f9-e9a4960c8897
+2021-05-02 00:41:45.427  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2021-05-02 00:41:45.428  INFO [reservation-service,,] 27204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-02 00:41:45.428  INFO [reservation-service,,] 27204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-02 00:41:45.459  INFO [reservation-service,,] 27204 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-02 00:41:45.460  INFO [reservation-service,,] 27204 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1724 ms
+2021-05-02 00:41:47.847  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:41:48.576  INFO [reservation-service,,] 27204 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-02 00:41:48.584  INFO [reservation-service,,] 27204 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-05-02 00:41:48.584  WARN [reservation-service,,] 27204 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-05-02 00:41:48.610  INFO [reservation-service,,] 27204 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-05-02 00:41:48.610  INFO [reservation-service,,] 27204 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-02 00:41:48.679  INFO [reservation-service,,] 27204 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-02 00:41:48.680  INFO [reservation-service,,] 27204 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 00:41:48.823  WARN [reservation-service,,] 27204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-05-02 00:41:49.335  WARN [reservation-service,,] 27204 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-02 00:41:49.953  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-05-02 00:41:50.182  INFO [reservation-service,,] 27204 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-02 00:41:50.483  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 00:41:52.523  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:41:52.584  INFO [reservation-service,,] 27204 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-05-02 00:41:53.271  WARN [reservation-service,,] 27204 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-05-02 00:41:53.467  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-05-02 00:41:53.475  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-05-02 00:41:53.475  INFO [reservation-service,,] 27204 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-02 00:41:53.476  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-02 00:41:53.477  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-02 00:41:53.477  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-02 00:41:53.477  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-02 00:41:53.477  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-02 00:41:53.477  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-05-02 00:41:53.478  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-02 00:41:53.509  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-05-02 00:41:53.510  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-05-02 00:41:53.510  INFO [reservation-service,,] 27204 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-05-02 00:41:53.512  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1619896313512 with initial instances count: 1
+2021-05-02 00:41:53.532  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application RESERVATION-SERVICE with eureka with status UP
+2021-05-02 00:41:53.532  INFO [reservation-service,,] 27204 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619896313532, current=UP, previous=STARTING]
+2021-05-02 00:41:53.533  INFO [reservation-service,,] 27204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 00:41:53.541  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8093 (http) with context path ''
+2021-05-02 00:41:53.542  INFO [reservation-service,,] 27204 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8093
+2021-05-02 00:41:53.554  INFO [reservation-service,,] 27204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 00:41:54.944  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-05-02 00:41:54.945  INFO [reservation-service,,] 27204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-02 00:41:54.947  INFO [reservation-service,,] 27204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-02 00:41:54.957  INFO [reservation-service,,] 27204 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-02 00:41:55.011  INFO [reservation-service,,] 27204 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-05-02 00:41:55.081  INFO [reservation-service,,] 27204 --- [restartedMain] c.k.r.ReservationServiceApplication      : Started ReservationServiceApplication in 12.76 seconds (JVM running for 132.859)
+2021-05-02 00:41:55.087  INFO [reservation-service,,] 27204 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-05-02 00:42:05.840  INFO [reservation-service,,] 27204 --- [http-nio-8093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-02 00:42:05.841  INFO [reservation-service,,] 27204 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-02 00:42:05.845  INFO [reservation-service,,] 27204 --- [http-nio-8093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-05-02 00:42:07.952 ERROR [reservation-service,77d5393da78a258e,77d5393da78a258e] 27204 --- [http-nio-8093-exec-1] c.k.r.service.ReservationService         : inside the circuit breaker fall back method.
+2021-05-02 00:42:07.952 ERROR [reservation-service,77d5393da78a258e,77d5393da78a258e] 27204 --- [http-nio-8093-exec-1] c.k.r.service.ReservationService         : end of the circuit breaker fall back method.
+2021-05-02 09:51:41.000  WARN [reservation-service,,] 27204 --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=9h9m22s284ms952µs700ns).
+2021-05-02 09:53:38.109  WARN [reservation-service,,] 27204 --- [RMI TCP Connection(2)-127.0.0.1] javax.management.remote.misc             : The server has decided to close this client connection.
+2021-05-02 11:08:42.323  WARN [reservation-service,,] 27204 --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=1h13m58s187ms216µs900ns).
+2021-05-02 11:09:17.020  INFO [reservation-service,,] 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-02 11:12:21.817  INFO [reservation-service,,] 27204 --- [Thread-18] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application RESERVATION-SERVICE with eureka with status DOWN
+2021-05-02 11:12:21.817  INFO [reservation-service,,] 27204 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1619934141817, current=DOWN, previous=UP]
+2021-05-02 11:12:21.817  INFO [reservation-service,,] 27204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093: registering service...
+2021-05-02 11:12:21.831  INFO [reservation-service,,] 27204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - registration status: 204
+2021-05-02 11:12:21.910  INFO [reservation-service,,] 27204 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-02 11:12:21.912  INFO [reservation-service,,] 27204 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-02 11:12:21.914  INFO [reservation-service,,] 27204 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-05-02 11:12:21.922  INFO [reservation-service,,] 27204 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-05-02 11:12:22.345  INFO [reservation-service,,] 27204 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-05-02 11:12:25.360  INFO [reservation-service,,] 27204 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-05-02 11:12:25.378  INFO [reservation-service,,] 27204 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RESERVATION-SERVICE/localhost:reservation-service:8093 - deregister  status: 200
+2021-05-02 11:12:25.384  INFO [reservation-service,,] 27204 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2021-05-02 11:12:25.830  INFO [reservation-service,,] 27204 --- [restartedMain] c.k.r.ReservationServiceApplication      : Starting ReservationServiceApplication using Java 1.8.0_281 on EPINHYDW07A3 with PID 27204 (C:\Programming\hotel-reservation-system\reservation-service\target\classes started by Saikoushik_Addanki in C:\Programming\hotel-reservation-system\reservation-service)
+2021-05-02 11:12:25.830  INFO [reservation-service,,] 27204 --- [restartedMain] c.k.r.ReservationServiceApplication      : No active profile set, falling back to default profiles: default
+2021-05-02 11:12:26.540  INFO [reservation-service,,] 27204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-02 11:12:26.559  INFO [reservation-service,,] 27204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2021-05-02 11:12:26.744  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8cc96ec4-6e63-36f9-82f9-e9a4960c8897
+2021-05-02 11:12:27.266  INFO [reservation-service,,] 27204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8093 (http)
+2021-05-02 11:12:27.267  INFO [reservation-service,,] 27204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-02 11:12:27.267  INFO [reservation-service,,] 27204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-02 11:12:27.292  INFO [reservation-service,,] 27204 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-02 11:12:27.292  INFO [reservation-service,,] 27204 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1459 ms
