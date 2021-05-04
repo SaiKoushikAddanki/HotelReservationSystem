@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.koushik.reservation.entity.ReservationDetails;
 
 @Repository
-public interface ReservationRepository extends JpaRepository<ReservationDetails, String> {
+public interface ReservationRepository extends JpaRepository<ReservationDetails, Integer> {
 
 }

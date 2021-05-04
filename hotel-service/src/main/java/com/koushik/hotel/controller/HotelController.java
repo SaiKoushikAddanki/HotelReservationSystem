@@ -16,8 +16,6 @@ import com.koushik.hotel.model.HotelDto;
 import com.koushik.hotel.response.ApiResponse;
 import com.koushik.hotel.service.IHotelService;
 
-import javassist.NotFoundException;
-
 @RestController
 public class HotelController implements IHotelController {
 

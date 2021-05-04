@@ -12,12 +12,12 @@ import javax.persistence.Id;
 import com.googlecode.jmapper.annotations.JMap;
 import com.koushik.reservation.model.RoomTypes;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
-@AllArgsConstructor
+@Setter
+@Getter
 @NoArgsConstructor
 @Entity
 public class ReservationDetails {

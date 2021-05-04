@@ -24,16 +24,16 @@ public class ExceptionHandling {
         return response;
     }
 
-	@ResponseBody
-    @ExceptionHandler(value={DatabaseBusinessException.class})
-    public ApiResponse<String> handleDatabaseBusinessException(DatabaseBusinessException ex){
-    	log.error(ex.toString());
-        ApiResponse<String> response = new ApiResponse<>();
-		response.setStatus(HttpStatus.INTERNAL_SERVER_ERROR);
-		response.setMessage("Database related issue occured in the system");
-		response.setData(ex.getMessage());
-        return response;
-    }
+	/*
+	 * @ResponseBody
+	 * 
+	 * @ExceptionHandler(value={DatabaseBusinessException.class}) public
+	 * ApiResponse<String> handleDatabaseBusinessException(DatabaseBusinessException
+	 * ex){ log.error(ex.toString()); ApiResponse<String> response = new
+	 * ApiResponse<>(); response.setStatus(HttpStatus.INTERNAL_SERVER_ERROR);
+	 * response.setMessage("Database related issue occured in the system");
+	 * response.setData(ex.getMessage()); return response; }
+	 */
 
 	@ResponseBody
     @ExceptionHandler(value ={ServiceBusinessException.class})
