@@ -7,11 +7,9 @@ import javax.persistence.Enumerated;
 import com.googlecode.jmapper.annotations.JMap;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
 
-@Data
-@NoArgsConstructor
+@Getter
 @AllArgsConstructor
 @Embeddable
 public class RoomDetails {

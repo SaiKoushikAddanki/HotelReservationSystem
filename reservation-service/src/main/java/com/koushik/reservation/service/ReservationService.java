@@ -1,5 +1,7 @@
 package com.koushik.reservation.service;
 
+import java.util.Optional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,7 +45,7 @@ public class ReservationService implements IReservationService {
 		mainResponse.setData(reservationRepository.save(reservationDetails));
 		return mainResponse;
 	}
-	
+
 	public ApiResponse<String> hotelServiceFallback(Exception ex) {
 		logger.error("inside the circuit breaker fall back method.");
 		ApiResponse<String> response = new ApiResponse<>();
@@ -52,6 +54,11 @@ public class ReservationService implements IReservationService {
 		response.setData(ex.getMessage());
 		logger.error("end of the circuit breaker fall back method.");
 		return response;
+	}
+	
+	@Override
+	public Optional<ReservationDetails> getHotelReservationDetails(int id) {
+		return reservationRepository.findById(id);
 	}
 
 }

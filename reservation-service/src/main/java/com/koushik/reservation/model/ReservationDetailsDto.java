@@ -3,12 +3,10 @@ package com.koushik.reservation.model;
 import java.util.Date;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
 
-@Data
+@Getter
 @AllArgsConstructor
-@NoArgsConstructor
 public class ReservationDetailsDto {
 	private int userId;
 	private String name;

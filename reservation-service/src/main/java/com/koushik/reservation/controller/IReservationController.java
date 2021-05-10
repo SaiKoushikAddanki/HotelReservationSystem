@@ -1,5 +1,7 @@
 package com.koushik.reservation.controller;
 
+import java.util.Optional;
+
 import org.springframework.data.crossstore.ChangeSetPersister.NotFoundException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,7 +15,7 @@ import com.koushik.reservation.response.ApiResponse;
 
 import io.swagger.annotations.Api;
 
-@Api(value = "ReservationController", description = "REST API to perform CRUD operations related to Hotel Entity")
+@Api(value = "ReservationController", description = "REST API to perform CRUD operations related to Reservation details Entity")
 @RestController
 public interface IReservationController {
 
@@ -22,6 +24,6 @@ public interface IReservationController {
 			@RequestBody ReservationDetailsDto reservationDetailsDto) throws NotFoundException;
 
 	@GetMapping("reserve/{id}")
-	public ApiResponse<ReservationDetails> getBookingDetails(@PathVariable int id);
+	public ApiResponse<Optional<ReservationDetails>> getBookingDetails(@PathVariable int id);
 
 }
