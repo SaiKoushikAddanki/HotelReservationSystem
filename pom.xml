@@ -10,6 +10,7 @@
     <module>reservation-service</module>
     <module>guest-service</module>
     <module>hotel-service</module>
+	<module>payment-service-with-axon</module>
 	<module>auth-service-jwt</module>
 	<module>config-server</module>
 	<module>discovery-service</module>
