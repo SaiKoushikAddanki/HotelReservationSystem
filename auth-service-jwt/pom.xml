@@ -12,7 +12,7 @@
 	<groupId>com.koushik.authservice</groupId>
 	<artifactId>auth-service-jwt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-cloud-api-gateway</name>
+	<name>auth-service-jwt</name>
 	<description>Api Gateway is a spring boot application for the load balkancong and centralization</description>
 	<properties>
 		<java.version>1.8</java.version>
